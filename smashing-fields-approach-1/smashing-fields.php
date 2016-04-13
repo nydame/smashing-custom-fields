@@ -5,7 +5,7 @@
 	Author: Matthew Ray
 	Version: 1.0.0
 */
-class Smashing_Fields_Plugin {
+class Firefly_Fields_Plugin {
 
     public function __construct() {
     	// Hook into the admin menu
@@ -23,7 +23,7 @@ class Smashing_Fields_Plugin {
     	$capability = 'manage_options';
     	$slug = 'firefly_fields';
     	$callback = array( $this, 'plugin_settings_page_content' );
-    	$icon = 'dashicons-admin-plugins';
+    	$icon = 'dashicons-smiley';
     	$position = 100;
 
     	add_menu_page( $page_title, $menu_title, $capability, $slug, $callback, $icon, $position );
@@ -32,13 +32,13 @@ class Smashing_Fields_Plugin {
     public function plugin_settings_page_content() { ?>
     	<div class="wrap">
     		<h2>My Awesome Settings Page</h2>
-    		<form method="POST" action="options.php">
+<!--     		<form method="POST" action="options.php">
                 <?php
                     settings_fields( 'firefly_fields' );
                     do_settings_sections( 'firefly_fields' );
                     submit_button();
                 ?>
-    		</form>
+    		</form> -->
     	</div> <?php
     }
 
@@ -211,4 +211,5 @@ class Smashing_Fields_Plugin {
     }
 
 }
-new Smashing_Fields_Plugin();
+
+new Firefly_Fields_Plugin();
