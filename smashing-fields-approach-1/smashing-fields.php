@@ -18,10 +18,10 @@ class Smashing_Fields_Plugin {
 
     public function create_plugin_settings_page() {
     	// Add the menu item and page
-    	$page_title = 'My Awesome Settings Page';
-    	$menu_title = 'Awesome Plugin';
+    	$page_title = 'Firefly Plugin Settings Page';
+    	$menu_title = 'Firefly Plugin';
     	$capability = 'manage_options';
-    	$slug = 'smashing_fields';
+    	$slug = 'firefly_fields';
     	$callback = array( $this, 'plugin_settings_page_content' );
     	$icon = 'dashicons-admin-plugins';
     	$position = 100;
@@ -34,8 +34,8 @@ class Smashing_Fields_Plugin {
     		<h2>My Awesome Settings Page</h2>
     		<form method="POST" action="options.php">
                 <?php
-                    settings_fields( 'smashing_fields' );
-                    do_settings_sections( 'smashing_fields' );
+                    settings_fields( 'firefly_fields' );
+                    do_settings_sections( 'firefly_fields' );
                     submit_button();
                 ?>
     		</form>
@@ -43,9 +43,9 @@ class Smashing_Fields_Plugin {
     }
 
     public function setup_sections() {
-        add_settings_section( 'our_first_section', 'My First Section Title', array( $this, 'section_callback' ), 'smashing_fields' );
-        add_settings_section( 'our_second_section', 'My Second Section Title', array( $this, 'section_callback' ), 'smashing_fields' );
-        add_settings_section( 'our_third_section', 'My Third Section Title', array( $this, 'section_callback' ), 'smashing_fields' );
+        add_settings_section( 'our_first_section', 'My First Section Title', array( $this, 'section_callback' ), 'firefly_fields' );
+        add_settings_section( 'our_second_section', 'My Second Section Title', array( $this, 'section_callback' ), 'firefly_fields' );
+        add_settings_section( 'our_third_section', 'My Third Section Title', array( $this, 'section_callback' ), 'firefly_fields' );
     }
 
     public function section_callback( $arguments ) {
@@ -150,8 +150,8 @@ class Smashing_Fields_Plugin {
         );
     	foreach( $fields as $field ){
 
-        	add_settings_field( $field['uid'], $field['label'], array( $this, 'field_callback' ), 'smashing_fields', $field['section'], $field );
-            register_setting( 'smashing_fields', $field['uid'] );
+        	add_settings_field( $field['uid'], $field['label'], array( $this, 'field_callback' ), 'firefly_fields', $field['section'], $field );
+            register_setting( 'firefly_fields', $field['uid'] );
     	}
     }
 
