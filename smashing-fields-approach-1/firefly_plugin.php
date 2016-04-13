@@ -68,7 +68,7 @@ class Firefly_Fields_Plugin {
         	array(
         		'uid' => 'awesome_text_field',
         		'label' => 'Sample Text Field',
-        		'section' => 'our_first_section',
+        		'section' => 'section_1',
         		'type' => 'text',
         		'placeholder' => 'Some text',
         		'helper' => 'I am a helper that appears alongside the field',
@@ -77,25 +77,25 @@ class Firefly_Fields_Plugin {
         	array(
         		'uid' => 'awesome_password_field',
         		'label' => 'Sample Password Field',
-        		'section' => 'our_first_section',
+        		'section' => 'section_1',
         		'type' => 'password',
         	),
         	array(
         		'uid' => 'awesome_number_field',
         		'label' => 'Sample Number Field',
-        		'section' => 'our_first_section',
+        		'section' => 'section_1',
         		'type' => 'number',
         	),
         	array(
         		'uid' => 'awesome_textarea',
         		'label' => 'Sample Text Area',
-        		'section' => 'our_first_section',
+        		'section' => 'section_2',
         		'type' => 'textarea',
         	),
         	array(
         		'uid' => 'awesome_select',
         		'label' => 'Sample Select Dropdown',
-        		'section' => 'our_first_section',
+        		'section' => 'section_3',
         		'type' => 'select',
         		'options' => array(
         			'option1' => 'Option 1',
@@ -109,7 +109,7 @@ class Firefly_Fields_Plugin {
         	array(
         		'uid' => 'awesome_multiselect',
         		'label' => 'Sample Multi Select',
-        		'section' => 'our_first_section',
+        		'section' => 'section_3',
         		'type' => 'multiselect',
         		'options' => array(
         			'option1' => 'Option 1',
@@ -123,7 +123,7 @@ class Firefly_Fields_Plugin {
         	array(
         		'uid' => 'awesome_radio',
         		'label' => 'Sample Radio Buttons',
-        		'section' => 'our_first_section',
+        		'section' => 'section_3',
         		'type' => 'radio',
         		'options' => array(
         			'option1' => 'Option 1',
@@ -137,7 +137,7 @@ class Firefly_Fields_Plugin {
         	array(
         		'uid' => 'awesome_checkboxes',
         		'label' => 'Sample Checkboxes',
-        		'section' => 'our_first_section',
+        		'section' => 'section_3',
         		'type' => 'checkbox',
         		'options' => array(
         			'option1' => 'Option 1',
