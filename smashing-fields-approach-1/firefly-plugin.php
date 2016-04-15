@@ -15,11 +15,17 @@
  *
  * @wordpress-plugin
  * Plugin Name: Firefly Demo Plugin
- * Description: Based on Matthew Ray's Smashing Magazine tutorial on Setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also use some things I learned from a Tom McFarlin tutorial. Things that have changed since version 0.0.1: Code was refactored so that class definition was placed in its own file.
+ * Description: Based on Matthew Ray's Smashing Magazine tutorial on Setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also use some things I learned from a Tom McFarlin tutorial. 
+ * 
+ * --Things that have changed in version 0.0.2: Code was refactored so that class definition was placed in its own file.
+ *
+ * --Things that have changed in version 0.0.3: Singleton pattern has been enforced.
+ *
+ * 
  * Author: Felicia Betancourt
  * Author URI:  http://go-firefly.com/
  * Plugin URI:  
- * Version:     0.2.0
+ * Version:     0.0.3
  * Text Domain: firefly-plugin
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -27,4 +33,5 @@
 
 require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-plugin.php' );
 
-new Firefly_Fields_Plugin();
+// new Firefly_Fields_Plugin();
+Firefly_Fields_Plugin::get_instance();

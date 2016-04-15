@@ -1,6 +1,18 @@
 <?php
 
 class Firefly_Fields_Plugin {
+    
+
+    //enforce singleton pattern
+
+    private static $instance;
+
+    public static function get_instance() {
+        if( null == self::$instance ) {
+            self::$instance = new self; // i.e., new WP_IS_GOOD()
+        }
+        return self::$instance;
+    }
 
     public function __construct() {
     	// Hook into the admin menu
