@@ -1,4 +1,4 @@
-<? php 
+<?php 
 class Firefly_Fields_Plugin {
 
     public function __construct() {

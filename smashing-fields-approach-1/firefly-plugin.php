@@ -14,7 +14,7 @@
  * @copyright 2013 Felicia Betancourt
  *
  * @wordpress-plugin
- * Plugin Name: FIREFLY PLUGIN
+ * Plugin Name: Firefly Demo Plugin
  * Description: Based on Matthew Ray's Smashing Magazine tutorial on Setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also use some things I learned from a Tom McFarlin tutorial. Things that have changed since version 0.0.1: Code was refactored so that class definition was placed in its own file.
  * Author: Felicia Betancourt
  * Author URI:  http://go-firefly.com/
