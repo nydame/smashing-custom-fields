@@ -1,10 +1,14 @@
 <?php
 
 class Firefly_Fields_Plugin {
-    
 
-    //enforce singleton pattern
-
+    /**
+     * Provide static variable to enforce singleton pattern
+     * 
+     * @var Object Instance of this class
+     *
+     * @since   0.0.3
+     */
     private static $instance;
 
     public static function get_instance() {
@@ -51,8 +55,7 @@ class Firefly_Fields_Plugin {
 
     public function setup_sections() {
         add_settings_section( 'section_1', 'Top Section', array( $this, 'section_callback' ), 'firefly_fields' );
-        add_settings_section( 'section_2', 'Middle Section', array( $this, 'section_callback' ), 'firefly_fields' );
-        add_settings_section( 'section_3', 'Bottom Section', array( $this, 'section_callback' ), 'firefly_fields' );
+        add_settings_section( 'section_2', 'Bottom Section', array( $this, 'section_callback' ), 'firefly_fields' );
     }
 
     public function section_callback( $arguments ) {
@@ -63,97 +66,42 @@ class Firefly_Fields_Plugin {
     		case 'section_2':
     			echo 'This one is number two';
     			break;
-    		case 'section_3':
-    			echo 'Third time is the charm!';
-    			break;
     	}
     }
 
     public function setup_fields() {
         $fields = array(
         	array(
-        		'uid' => 'awesome_text_field',
-        		'label' => 'Sample Text Field',
+        		'uid' => 'add_widget_shortcodes',
+        		'label' => 'Enable widget shortcodes?',
         		'section' => 'section_1',
-        		'type' => 'text',
-        		'placeholder' => 'Some text',
-        		'helper' => 'I am a helper that appears alongside the field',
-        		'supplimental' => 'I am supplemental, and I appear underneath the field',
-        	),
-        	array(
-        		'uid' => 'awesome_password_field',
-        		'label' => 'Sample Password Field',
-        		'section' => 'section_1',
-        		'type' => 'password',
-        	),
-        	array(
-        		'uid' => 'awesome_number_field',
-        		'label' => 'Sample Number Field',
-        		'section' => 'section_1',
-        		'type' => 'number',
-        	),
-        	array(
-        		'uid' => 'awesome_textarea',
-        		'label' => 'Sample Text Area',
-        		'section' => 'section_2',
-        		'type' => 'textarea',
-        	),
-        	array(
-        		'uid' => 'awesome_select',
-        		'label' => 'Sample Select Dropdown',
-        		'section' => 'section_3',
-        		'type' => 'select',
-        		'options' => array(
-        			'option1' => 'Option 1',
-        			'option2' => 'Option 2',
-        			'option3' => 'Option 3',
-        			'option4' => 'Option 4',
-        			'option5' => 'Option 5',
-        		),
-                'default' => array()
-        	),
-        	array(
-        		'uid' => 'awesome_multiselect',
-        		'label' => 'Sample Multi Select',
-        		'section' => 'section_3',
-        		'type' => 'multiselect',
-        		'options' => array(
-        			'option1' => 'Option 1',
-        			'option2' => 'Option 2',
-        			'option3' => 'Option 3',
-        			'option4' => 'Option 4',
-        			'option5' => 'Option 5',
-        		),
-                'default' => array()
-        	),
-        	array(
-        		'uid' => 'awesome_radio',
-        		'label' => 'Sample Radio Buttons',
-        		'section' => 'section_3',
         		'type' => 'radio',
         		'options' => array(
-        			'option1' => 'Option 1',
-        			'option2' => 'Option 2',
-        			'option3' => 'Option 3',
-        			'option4' => 'Option 4',
-        			'option5' => 'Option 5',
+        			'option1' => 'Yes',
+        			'option2' => 'No',
         		),
                 'default' => array()
         	),
         	array(
-        		'uid' => 'awesome_checkboxes',
-        		'label' => 'Sample Checkboxes',
-        		'section' => 'section_3',
-        		'type' => 'checkbox',
-        		'options' => array(
-        			'option1' => 'Option 1',
-        			'option2' => 'Option 2',
-        			'option3' => 'Option 3',
-        			'option4' => 'Option 4',
-        			'option5' => 'Option 5',
-        		),
+        		'uid' => 'color_picker_color',
+        		'label' => 'Choose background color for tag',
+        		'section' => 'section_2',
+        		'type' => 'color-picker',
                 'default' => array()
-        	)
+        	),
+            array(
+                'uid' => 'color_picker_tag_name',
+                'label' => 'Choose HTML tag to get background color applied',
+                'section' => 'section_2',
+                'type' => 'select',
+                'options' => array(
+                    'option1' => 'body',
+                    'option2' => 'div',
+                    'option3' => 'a',
+                    'option4' => 'p',
+                    'option5' => 'article',
+                )
+            ),
         );
     	foreach( $fields as $field ) {
 
