@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die( 'Nice try!' );
+
 class Firefly_Fields_Plugin {
 
     /**

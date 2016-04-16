@@ -33,6 +33,8 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */    
 
+defined( 'ABSPATH' ) or die( 'Nice try!' );
+
 require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-plugin.php' );
 
 // new Firefly_Fields_Plugin();
