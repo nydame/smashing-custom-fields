@@ -92,7 +92,7 @@ class Firefly_Fields_Plugin {
         		'uid' => 'color_picker_color',
         		'label' => 'Choose background color for tag',
         		'section' => 'section_2',
-        		'type' => 'color-picker',
+        		'type' => 'color',
                 'default' => array()
         	),
             array(
@@ -160,6 +160,8 @@ class Firefly_Fields_Plugin {
                     printf( '<fieldset>%s</fieldset>', $options_markup );
                 }
                 break;
+            case 'color':
+                printf('<input name="%1$s" id="%1$s" type="%2$s" />', $arguments['uid'], $arguments['type']);
         }
 
         if( $helper = $arguments['helper'] ){
