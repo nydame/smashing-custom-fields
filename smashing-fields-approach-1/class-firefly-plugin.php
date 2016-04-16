@@ -69,6 +69,12 @@ class Firefly_Fields_Plugin {
     	}
     }
 
+    /**
+     * Determines which form fields will be shown on the plugin's settings page(s) on the Dashboard.
+     * @since 0.1.0
+     * @uses add_settings_field 
+     * @uses register_setting 
+     */
     public function setup_fields() {
         $fields = array(
         	array(
@@ -100,7 +106,8 @@ class Firefly_Fields_Plugin {
                     'option3' => 'a',
                     'option4' => 'p',
                     'option5' => 'article',
-                )
+                ),
+                'default' => array()
             ),
         );
     	foreach( $fields as $field ) {

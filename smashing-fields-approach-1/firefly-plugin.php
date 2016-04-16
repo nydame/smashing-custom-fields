@@ -21,11 +21,13 @@
  *
  * --Things that have changed in version 0.0.3: Singleton pattern has been enforced.
  *
+ * --New in version 0.1.0: Fields displayed on plugin's settings page have been narrowed down to those needed for feature set that is being developed. As those features are implemented, version number will be 0.1.x. Also, some documentation of class properties and methods has begun.
+ *
  * 
  * Author: Felicia Betancourt
  * Author URI:  http://go-firefly.com/
  * Plugin URI:  
- * Version:     0.0.3
+ * Version:     0.1.0
  * Text Domain: firefly-plugin
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
