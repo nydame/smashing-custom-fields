@@ -162,6 +162,7 @@ class Firefly_Fields_Plugin {
                 break;
             case 'color':
                 printf('<input name="%1$s" id="%1$s" type="%2$s" />', $arguments['uid'], $arguments['type']);
+                break;
         }
 
         if( $helper = $arguments['helper'] ){
