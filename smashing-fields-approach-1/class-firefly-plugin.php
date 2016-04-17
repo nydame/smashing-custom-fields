@@ -63,10 +63,10 @@ class Firefly_Fields_Plugin {
     public function section_callback( $arguments ) {
     	switch( $arguments['id'] ){
     		case 'section_1':
-    			echo 'This is the first description here!';
+    			echo 'You can turn shortcodes on and off in this section.';
     			break;
     		case 'section_2':
-    			echo 'This one is number two';
+    			echo 'Here is where you can set the background color of your favorite DOM elements.';
     			break;
     	}
     }
@@ -88,14 +88,14 @@ class Firefly_Fields_Plugin {
         			'option1' => 'Yes',
         			'option2' => 'No',
         		),
-                'default' => array()
+                'default' => array('No')
         	),
         	array(
         		'uid' => 'color_picker_color',
         		'label' => 'Choose background color for tag',
         		'section' => 'section_2',
         		'type' => 'color',
-                'default' => array()
+                'default' => array('#ffffff')
         	),
             array(
                 'uid' => 'color_picker_tag_name',
@@ -109,7 +109,7 @@ class Firefly_Fields_Plugin {
                     'option4' => 'p',
                     'option5' => 'article',
                 ),
-                'default' => array()
+                'default' => array('body')
             ),
         );
     	foreach( $fields as $field ) {
