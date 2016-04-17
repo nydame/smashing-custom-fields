@@ -16,12 +16,6 @@
  * @wordpress-plugin
  * Plugin Name: Firefly Demo Plugin
  * Description: Based on Matthew Ray's Smashing Magazine tutorial on Setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also use some things I learned from a Tom McFarlin tutorial. 
- * 
- * --Things that have changed in version 0.0.2: Code was refactored so that class definition was placed in its own file.
- *
- * --Things that have changed in version 0.0.3: Singleton pattern has been enforced.
- *
- * --New in version 0.1.0: Fields displayed on plugin's settings page have been narrowed down to those needed for feature set that is being developed. As those features are implemented, version number will be 0.1.x. Also, some documentation of class properties and methods has begun.
  *
  * 
  * Author: Felicia Betancourt
@@ -31,7 +25,25 @@
  * Text Domain: firefly-plugin
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- */    
+ */  
+
+/*
+Copyright 2016  Felicia Betancourt  (email : info@go-firefly.com)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as 
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For a copy of the GNU General Public License, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+See readme.txt for changelog.
+*/  
 
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
