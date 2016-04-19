@@ -54,6 +54,6 @@ Firefly_Fields_Plugin::get_instance();
 
 // implement feature Add Shortcode to Widgets
 $add_widget_shortcodes = get_option('add_widget_shortcodes');
-if ( ! empty($add_widget_shortcodes) && $add_widget_shortcodes == "Yes" ) {
+if ( ! empty($add_widget_shortcodes) && $add_widget_shortcodes == "option1" ) {
     add_action('widget_text', 'do_shortcode');
 }
