@@ -2,6 +2,8 @@
 
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
+if ( ! class_exists(Firefly_Fields_Plugin) ):
+
 class Firefly_Fields_Plugin {
 
     /**
@@ -88,14 +90,14 @@ class Firefly_Fields_Plugin {
         			'option1' => 'Yes',
         			'option2' => 'No',
         		),
-                'default' => array('No')
+                'default' => ''
         	),
         	array(
         		'uid' => 'color_picker_color',
         		'label' => 'Choose background color for tag',
         		'section' => 'section_2',
         		'type' => 'color',
-                'default' => array('#ffffff')
+                'default' => ''
         	),
             array(
                 'uid' => 'color_picker_tag_name',
@@ -109,7 +111,7 @@ class Firefly_Fields_Plugin {
                     'option4' => 'p',
                     'option5' => 'article',
                 ),
-                'default' => array('body')
+                'default' => ''
             ),
         );
     	foreach( $fields as $field ) {
@@ -178,3 +180,5 @@ class Firefly_Fields_Plugin {
     }
 
 }
+
+endif;
