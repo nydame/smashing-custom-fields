@@ -17,7 +17,7 @@ class Firefly_Fields_Plugin {
 
     public static function get_instance() {
         if( null == self::$instance ) {
-            self::$instance = new self; // i.e., new WP_IS_GOOD()
+            self::$instance = new self; // i.e., new Firefly_Fields_Plugin()
         }
         return self::$instance;
     }
@@ -29,6 +29,8 @@ class Firefly_Fields_Plugin {
         // Add Settings and Fields
     	add_action( 'admin_init', array( $this, 'setup_sections' ) );
     	add_action( 'admin_init', array( $this, 'setup_fields' ) );
+
+        add_action('widgets_init', array( $this, 'implement_features' ));
     }
 
     public function create_plugin_settings_page() {
@@ -177,6 +179,10 @@ class Firefly_Fields_Plugin {
             printf( '<p class="description">%s</p>', $supplimental );
         }
 
+    }
+
+    public function implement_features() {
+        
     }
 
 }
