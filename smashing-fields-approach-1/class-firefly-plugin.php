@@ -30,7 +30,7 @@ class Firefly_Fields_Plugin {
     	add_action( 'admin_init', array( $this, 'setup_sections' ) );
     	add_action( 'admin_init', array( $this, 'setup_fields' ) );
 
-        add_action('widgets_init', array( $this, 'implement_features' ));
+        add_action('init', array( $this, 'implement_feature_1' ));
     }
 
     public function create_plugin_settings_page() {
@@ -181,8 +181,12 @@ class Firefly_Fields_Plugin {
 
     }
 
-    public function implement_features() {
-        
+    public function implement_feature_1() {
+        // implement feature Add Shortcode to Widgets
+        $add_widget_shortcodes = get_option('add_widget_shortcodes');
+        if ( ! empty($add_widget_shortcodes) && $add_widget_shortcodes == "option1" ) {
+            add_action('widget_text', 'do_shortcode');
+        }
     }
 
 }
