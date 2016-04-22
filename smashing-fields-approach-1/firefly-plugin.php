@@ -52,8 +52,3 @@ require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-plugin.php' );
 // new Firefly_Fields_Plugin object, or use pre-existing one
 Firefly_Fields_Plugin::get_instance();
 
-// implement feature Add Shortcode to Widgets
-$add_widget_shortcodes = get_option('add_widget_shortcodes');
-if ( ! empty($add_widget_shortcodes) && $add_widget_shortcodes[0] == "option1" ) {
-    add_action('widget_text', 'do_shortcode');
-}
