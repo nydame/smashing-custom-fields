@@ -47,6 +47,15 @@ See readme.txt for changelog.
 
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
+// CREATE SETTINGS PAGE
+
+require_once( plugin_dir_path( __FILE__ ) . 'class-simple-settings-page.php' );
+
+// new Simple_Settings_Page object, or use pre-existing one
+Simple_Settings_Page::get_instance();
+
+// IMPLEMENT SETTINGS
+
 require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-plugin.php' );
 
 // new Firefly_Fields_Plugin object, or use pre-existing one

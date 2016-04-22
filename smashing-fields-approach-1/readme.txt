@@ -50,6 +50,10 @@ answer 2
 - Fields displayed on plugin's settings page have been narrowed down to those needed for feature set that is being developed.
 - Documentation of class properties and methods begun.
 
+= 0.1.1 =
+
+- Refactor code so a new class handles creation of a settings page. However, that new class is not yet reusable in other plugins.
+
 
 == Upgrade Notice ==
 = 0.1.0 =
