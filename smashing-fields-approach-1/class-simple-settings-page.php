@@ -35,10 +35,10 @@ class Simple_Settings_Page {
         return self::$instance;
     }
 
-    public function __construct() {
+    public function __construct($version, $slug) {
     	// Set properties
-    	$this->version = '0.1.0';
-    	$this->slug = 'firefly_demo';
+    	$this->version = $version;
+    	$this->slug = $slug;
     	// Hook into the admin menu
     	add_action( 'admin_menu', array( $this, 'create_plugin_settings_page' ));
 

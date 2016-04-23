@@ -47,12 +47,18 @@ See readme.txt for changelog.
 
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
+// SET VERSION NUMBER
+$FIREFLY_DEMO_VERSION = '0.1.1';
+
+// SET TEXT-DOMAIN
+$FIREFLY_DEMO_SLUG = 'firefly_demo';
+
 // CREATE SETTINGS PAGE
 
 require_once( plugin_dir_path( __FILE__ ) . 'class-simple-settings-page.php' );
 
 // new Simple_Settings_Page object, or use pre-existing one
-Simple_Settings_Page::get_instance();
+Simple_Settings_Page::get_instance( FIREFLY_DEMO_VERSION, FIREFLY_DEMO_SLUG );
 
 // IMPLEMENT SETTINGS
 

@@ -34,7 +34,11 @@ This plugin was developed as a teaching tool. It is intended to serve as a templ
 
 * Initial release
 
+= 0.1.1 =
+
+* Define version and slug (text-domain) in "main" plugin file.
+
 == Developer ==
 
-The developer can be contacted via <a>email</a>
+The developer can be contacted via <a href="mailto:info@go-firefly.com?subject='Firefly Demo Plugin inquiry'">email</a>
 
