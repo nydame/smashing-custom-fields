@@ -15,7 +15,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: Firefly Demo Plugin
- * Description: Based on Matthew Ray's Smashing Magazine tutorial on setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also weave in some of the many things I learned from Tom McFarlin's tutorial (https://tommcfarlin.com/how-to-build-a-wordpress-plugin/)
+ * Description: Chiefly based on Matthew Ray's Smashing Magazine tutorial on setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also weave in some of the many things I learned from Tom McFarlin's tutorial (https://tommcfarlin.com/how-to-build-a-wordpress-plugin/) and from the WordPress Plugin Boilerplate project (http://wppb.io/) which he started.
  *
  * 
  * Author: Felicia Betancourt
