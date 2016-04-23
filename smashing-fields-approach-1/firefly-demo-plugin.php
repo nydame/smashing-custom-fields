@@ -48,10 +48,10 @@ See readme.txt for changelog.
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
 // SET VERSION NUMBER
-$FIREFLY_DEMO_VERSION = '0.1.1';
+define( 'FIREFLY_DEMO_VERSION','0.1.1' );
 
 // SET TEXT-DOMAIN
-$FIREFLY_DEMO_SLUG = 'firefly_demo';
+define('FIREFLY_DEMO_SLUG', 'firefly_demo');
 
 // CREATE SETTINGS PAGE
 
