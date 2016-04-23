@@ -28,9 +28,9 @@ class Simple_Settings_Page {
      */
     private $slug;
 
-    public static function get_instance() {
+    public static function get_instance($version, $slug) {
         if( null == self::$instance ) {
-            self::$instance = new self; // i.e., new Simple_Settings_Page()
+            self::$instance = new self($version, $slug); // i.e., new Simple_Settings_Page()
         }
         return self::$instance;
     }
