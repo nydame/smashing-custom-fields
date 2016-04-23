@@ -45,6 +45,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 See readme.txt for changelog.
 */  
 
+// THWART EVIL-DOERS
 defined( 'ABSPATH' ) or die( 'Nice try!' );
 
 // SET VERSION NUMBER

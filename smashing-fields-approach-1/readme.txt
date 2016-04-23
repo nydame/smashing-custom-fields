@@ -26,7 +26,7 @@ This plugin was developed as a teaching tool. It is intended to serve as a templ
 
 == Screenshots ==
 
-1. The Settings Page is listed in the Dashboard menu screenshot-1.(png|jpg|jpeg|gif).
+1. The Settings Page is listed in the Dashboard menu screenshot.(png|jpg|jpeg|gif).
 
 == Changelog ==
 
