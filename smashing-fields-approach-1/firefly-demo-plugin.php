@@ -8,14 +8,14 @@
  * FIREFLY PLUGIN
  *
  * @package   FIREFLY PLUGIN
- * @author    Felicia Betancourt <bosslady@go-firefly.com>
+ * @author    Felicia Betancourt <info@go-firefly.com>
  * @license   GPL-2.0+
  * @link      https://github.com/nydame/smashing-custom-fields/tree/nydames-work
  * @copyright 2013 Felicia Betancourt
  *
  * @wordpress-plugin
  * Plugin Name: Firefly Demo Plugin
- * Description: Based on Matthew Ray's Smashing Magazine tutorial on Setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also use some things I learned from a Tom McFarlin tutorial. 
+ * Description: Based on Matthew Ray's Smashing Magazine tutorial on setting up custom fields for a plugin (https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/). I also weave in some of the many things I learned from Tom McFarlin's tutorial (https://tommcfarlin.com/how-to-build-a-wordpress-plugin/)
  *
  * 
  * Author: Felicia Betancourt
@@ -30,9 +30,9 @@
 /*
 Copyright 2016  Felicia Betancourt  (email : info@go-firefly.com)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License, version 2, as 
-published by the Free Software Foundation.
+This program is free software designed chiefly for teaching purposes; 
+you can redistribute it and/or modifyit under the terms of the 
+GNU General Public License, version 2, as published by the Free Software Foundation.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -56,8 +56,8 @@ Simple_Settings_Page::get_instance();
 
 // IMPLEMENT SETTINGS
 
-require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-plugin.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'class-firefly-demo-plugin.php' );
 
-// new Firefly_Fields_Plugin object, or use pre-existing one
-Firefly_Fields_Plugin::get_instance();
+// new Firefly_Demo_Plugin object, or use pre-existing one
+Firefly_Demo_Plugin::get_instance();
 
