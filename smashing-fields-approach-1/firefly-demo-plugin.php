@@ -5,9 +5,9 @@
 */
 
 /**
- * FIREFLY PLUGIN
+ * FIREFLY DEMO PLUGIN
  *
- * @package   FIREFLY PLUGIN
+ * @package   FIREFLY DEMO PLUGIN
  * @author    Felicia Betancourt <info@go-firefly.com>
  * @license   GPL-2.0+
  * @link      https://github.com/nydame/smashing-custom-fields/tree/nydames-work
@@ -22,7 +22,7 @@
  * Author URI:  http://go-firefly.com/
  * Plugin URI:  
  * Version:     0.1.0
- * Text Domain: firefly-plugin
+ * Text Domain: firefly-demo-plugin
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */  
